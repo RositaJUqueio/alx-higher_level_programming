@@ -7,15 +7,16 @@ if __name__ == "__main__":
     Args: 
         n: Number of argument(s)
         string: Argument list
+        pos: argument position
         '''
-    for args in range(n):
-        pos = args + 1
-        string = sys.argv[args + 1]
-        if n == 1:
-            print("{} argument:".format(n))
-            print("{}: {}".format(pos, string))
-        elif n == 0:
-            print("{} arguments.".format(n))
-        else:
-            print("{} arguments:".format(n))
-            print("{:} {}".format(pos, string))
+    if n == 1:
+        print("{} argument:".format(n))
+    elif n == 0:
+        print("{} arguments.".format(n))
+    else:
+        print("{} arguments:".format(n))
+    for arg in range(n):
+            pos = arg + 1
+            string = sys.argv[arg + 1]
+            print("{}: {}".format(pos,string))
+            
