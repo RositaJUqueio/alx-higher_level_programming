@@ -4,4 +4,3 @@ if __name__ == "__main__":
     ''' program that imports the variable a
     and prints its value.'''
     print("{}".format(a))
-
