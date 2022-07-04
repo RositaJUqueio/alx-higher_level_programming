@@ -10,12 +10,7 @@ if __name__ == "__main__":
     '''
     a = 10
     b = 5
-    ans1 = add(a, b)
-    ans2 = sub(a, b)
-    ans3 = mul(a, b)
-    ans4 = div(a, b)
-
-    print(f"{a} + {b} = {ans1}")
-    print(f"{a} - {b} = {ans2}")
-    print(f"{a} * {b} = {ans3}")
-    print(f"{a} / {b} = {ans4}")
+    print("{} + {} = {}".format(a, b, add(a, b)))
+    print("{} - {} = {}".format(a, b, sub(a, b)))
+    print("{} * {} = {}".format(a, b, mul(a, b)))
+    print("{} / {} = {}".format(a, b, div(a, b)))
