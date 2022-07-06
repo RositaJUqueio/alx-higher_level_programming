@@ -4,8 +4,9 @@ if __name__ == "__main__":
     len(sys.argv) , checks how many arguments that have been entered.
     """
     import sys
+
     result = 0
 
     for i in range(len(sys.argv) - 1)
-    result += int(sys.argv[a + 1])
+    result += int(sys.argv[i + 1])
     print("{}".format(result))
