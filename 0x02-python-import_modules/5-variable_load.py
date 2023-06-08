@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#Rosita J Uqueio
+# Rosita J Uqueio
 
 if __name__ == "__main__":
     """program imports and prints variable"""
