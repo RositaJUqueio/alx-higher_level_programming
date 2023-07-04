@@ -5,6 +5,10 @@
 
 
 class Square:
+    """defines new square"""
+
     def __init__(val, size):
-        """creates new square"""
+        """defines square by Private
+         instance attribute: size
+         """
         val.size = __size
