@@ -14,9 +14,7 @@ class Rectangle:
             width (int): The width of the rectangle.
             height (int): The height of the rectangle.
         """
-        self.__width = 0
         self.width = width  # setter method to set the width
-        self.__height = 0
         self.height = height  # setter method to set the height
 
     @property
