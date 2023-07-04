@@ -14,8 +14,8 @@ class Square:
             size (int): The size of the new square.
             position (tuple): The position of the square.
         """
-        self.size = size  #setter method to set the size
-        self.position = position  #setter method to set the position
+        self.size = size  # setter method to set the size
+        self.position = position  # setter method to set the position
 
     @property
     def size(self):
