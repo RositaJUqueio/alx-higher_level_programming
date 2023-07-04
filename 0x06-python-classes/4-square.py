@@ -2,7 +2,8 @@
 # Rosita J Uqueio
 
 """retrieve the value of the size attribute"""
- 
+
+
 class Square:
     """Represents a square."""
 
