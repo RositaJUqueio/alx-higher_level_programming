@@ -45,42 +45,42 @@ Non-integers or Floats
 
 >>> add_integer("RositaJUqueio", 2)
 Traceback (most recent call last):
-  TypeError: a must be an integer
+TypeError: a must be an integer
 
 >>> add_integer(2, "Famanda")
 Traceback (most recent call last):
-  TypeError: b must be an integer
+TypeError: b must be an integer
 
 >>> add_integer(None, 3)
 Traceback (most recent call last):
-  TypeError: a must be an integer
+TypeError: a must be an integer
 
 >>> add_integer(2, None)
 Traceback (most recent call last):
-  TypeError: b must be an integer
+TypeError: b must be an integer
 
 If both arguments are not of the required type int or float, TypeError is printed for the first argument.
 
 >>> add_integer("Hi", "Rosita")
 Traceback (most recent call last):
-  TypeError: a must be an integer
+TypeError: a must be an integer
 
 If infinity is provided, the function fails.
 
 >>> add_integer(4, float('inf'))
 Traceback (most recent call last):
-  OverflowError: cannot convert float infinity to an integer
+OverflowError: cannot convert float infinity to integer
 
 >>> add_integer(float('inf'))
 Traceback (most recent call last):
-  OverflowError: cannot convert float infinity to an integer
+OverflowError: cannot convert float infinity to integer
 
 Function fails with NaN numbers too:
 
 >>> add_integer(float('nan'))
 Traceback (most recent call last):
-  ValueError: cannot convert float NaN to an integer
+ValueError: cannot convert float NaN to integer
 
 >>> add_integer(int('nan'))
 Traceback (most recent call last):
-  ValueError: invalid literal for int() with base 10: 'nan'
+ValueError: invalid literal for int() with base 10: 'nan'
