@@ -1,13 +1,14 @@
-'0-add_integer' module
+The 0-add_integer module
 ============================
 
+""""
 This module defines an addition function 'add_integer(a, b=98)'.
 
-Usage
-=====
-'add_integer(...)' returns the addition of two arguments.
+Usage: add_integer  returns the addition of two arguments.
+"""
 
-Cases:
+Test Cases:
+===========
 
 >>> add_integer = __import__('0-add_integer').add_integer
 >>> add_integer(2, 4)
@@ -42,7 +43,7 @@ Non-integers or Floats
 
 'add_integer()' expects integers or float as arguments. A TypeError is raised if any of the arguments is not any of type int or float.
 
->>> add_integer("Rosita J Uqueio", 2)
+>>> add_integer("RositaJUqueio", 2)
 Traceback (most recent call last):
   TypeError: a must be an integer
 
