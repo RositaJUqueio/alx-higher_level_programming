@@ -1,1 +1,0 @@
-This modules defines a base geometry class BaseGeometry.
