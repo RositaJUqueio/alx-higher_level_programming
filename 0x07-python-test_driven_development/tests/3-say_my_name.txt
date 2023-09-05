@@ -1,0 +1,43 @@
+The 3-say_my_name.p Module
+===========================
+
+"""
+This module define a functions 'say_my_name(first_name, last_name="")':
+
+Usage: Function takes two string arguments and prints them as output
+""""
+
+Test Cases:
+===========
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Function works with strings and single characters
+
+>>> say_my_name("Rosita", "Jose Uqueio")
+My name is Rosita Jose Uqueio
+
+>>> say_my_name("W", 'u')
+My name is W u
+
+Function works wit one input if it is the right format
+
+>>> say_my_name("Already complete")
+My name is Already complete
+
+>>> say_my_name(2)
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+
+Function raises a TypeError when input is not a string
+
+>>> say_my_name("ALX Sprint", 2)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+>>> say_my_name(1, "Already complete")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+
