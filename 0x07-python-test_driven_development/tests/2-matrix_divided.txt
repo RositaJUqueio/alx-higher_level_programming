@@ -1,0 +1,29 @@
+The 2-matrix_divided.py module
+===============================
+
+"""
+This module defines a matrix division function 'matrix_divided(matrix, div)'.
+
+Ussage: 'matrix_divided(...) returns a copy of matrix with all elements divided by 'div.
+"""
+
+Test Cases
+==========
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+>>> matrix = [[2, 4, 6],[9, 12, 15]]
+>>> print(matrix_divided(matrix, 2))
+[[1.0, 2.0, 3.0], [4.5, 6.0, 7.5]]
+
+The original matrix is unchanged
+
+>>> print(matrix)
+[[2, 4, 6], [9, 12, 15]]
+
+Function can also handle floating-point numbers.
+NB: rounded to a maximum of two decimal places.
+
+>>> matrix = [[2.2, 4.0, 6.1],[9.25, 12.3, 15.2]]
+>>> print(matrix_divided(matrix, 3))
+[[0.73, 1.33, 2.03], [3.08, 4.1, 5.07]]
