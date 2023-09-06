@@ -1,0 +1,36 @@
+The 5-text_indentation.py Module
+================================
+
+"""
+This module defines a text-indentation function 'text_indentation(text)'.
+
+Usage: Text is printed with two new lines after each of the characters '.', '?',
+and ':'.
+"""
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation("here? or there?")
+here?
+<BLANKLINE>
+or there?
+<BLANKLINE>
+
+Function prints no spaces at the begining/end of each printed line.
+
+>>> text_indentation("  RJ Uqueio")
+RJ Uqueio
+
+>>> text_indentation("hi.  ")
+hi.
+<BLANKLINE>
+
+>>> text_indentation("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. \Quonam modo? r an totas paginas commovere? \n i""")
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<BLANKLINE>
+\Quonam modo?
+<BLANKLINE>
+r an totas paginas commovere?
+<BLANKLINE>
+<BLANKLINE>
+i
