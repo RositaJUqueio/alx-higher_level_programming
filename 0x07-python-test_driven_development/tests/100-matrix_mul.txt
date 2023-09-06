@@ -1,0 +1,55 @@
+The 100-matrix_mul.py Module
+=============================
+
+"""
+This module defines a matrix multiplication function ``matrix_mul(m_a, m_b)``.
+
+Usage: 'matrix_mul(...)' returns a new matrix representing the multiplication 
+of 'm_a' by 'm_b'.
+"""
+
+Test Cases
+==========
+
+>>> matrix_mul = __import__('100-matrix_mul').matrix_mul
+
+>>> print(matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]]))
+[[7, 10], [15, 22]]
+
+>>> print(matrix_mul([[1, 2]], [[3, 4], [5, 6]]))
+[[13, 16]]
+
+Function works with negative values.
+
+>>> print(matrix_mul([[-1, 2], [3, -4]], [[1, -2], [-3, 4]]))
+[[-7, 10], [15, -22]]
+
+>>> print(matrix_mul([[0, -2]], [[-3, -4], [0, -6]]))
+[[0, 12]]
+
+Function works with floating point values
+
+>>> m_a = [[1.5, 2.5, 6.5],[4.256, -12.2, 8.2]]
+>>> m_b = [[5.22, 13.3],[-22.9, 14.4],[7.22, 4.34]]
+>>> print(matrix_mul(m_a, m_b))
+[[-2.490000000000002, 84.16], [360.80031999999994, -83.4872]]
+
+Function works with a combination of integers & Float values
+>>> m_a = [[1.5, 2.5, 6],[4, 2, 8]]
+>>> m_b = [[5.22, 3],[-29, 4],[7.22, 4]]
+>>> print(matrix_mul(m_a, m_b))
+[[-21.35, 38.5], [20.639999999999993, 52]]
+
+TypeError is raised if provided arguments < 0:
+
+>>> print(matrix_mul([[1.5, 2.5, 6],[4, 2, 8]]))
+Traceback (most recent call last):
+TypeError: matrix_mul() missing 1 required positional argument: 'm_b'
+
+TypeError is raised if matrixes differ in size
+
+>>> print(matrix_mul([[1.5, 2.5, 6],[4, 2, 8]],[[4, 2, 8], [2, 3]]))
+Traceback (most recent call last):
+TypeError: each row of m_b must should be of the same size
+
+
