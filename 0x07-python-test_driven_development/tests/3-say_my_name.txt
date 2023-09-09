@@ -22,8 +22,8 @@ My name is W u
 
 Function works wit one input if it is the right format
 
->>> say_my_name("All complete")
-My name is All complete
+>>> say_my_name("complete")
+My name is complete
 
 >>> say_my_name(2)
 Traceback (most recent call last):
