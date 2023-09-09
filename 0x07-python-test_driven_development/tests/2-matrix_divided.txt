@@ -27,3 +27,25 @@ NB: rounded to a maximum of two decimal places.
 >>> matrix = [[2.2, 4.0, 6.1],[9.25, 12.3, 15.2]]
 >>> print(matrix_divided(matrix, 3))
 [[0.73, 1.33, 2.03], [3.08, 4.1, 5.07]]
+
+Matrix must be a list of lists of integers/floats, else function raises a TypeError
+
+>>> matrix = [['a', 'b', 'c'],[4, 5, 6]]
+>>> print(matrix_divided(matrix, 3))
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Function raises TypeError if matrix rows arent equal
+
+>>> matrix = [[1, 2, 3],[4, 5, 6, 7]]
+>>> print(matrix_divided(matrix, 3))
+Traceback (most recent call last):
+TypeError: Each row of the matrix must have the same size
+
+Function raises ZeroDivisionError when div is 0
+
+>>> matrix = [[1, 2, 3],[4, 5, 7]]
+>>> print(matrix_divided(matrix, 0))
+Traceback (most recent call last):
+ZeroDivisionError: division by zero
+
