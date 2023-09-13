@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 # Rosita J Uqueio
 
+"""Add all args to Python list & save them to a file."""
 import sys
 import json
 from os.path import exists
