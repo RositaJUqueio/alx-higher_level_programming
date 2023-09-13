@@ -6,10 +6,12 @@ import sys
 import json
 from os.path import exists
 
+
 def save_to_json_file(my_obj, filename):
     """Save an object to a JSON file."""
     with open(filename, mode='w', encoding='utf-8') as file:
         json.dump(my_obj, file)
+
 
 def load_from_json_file(filename):
     """Load an object from a JSON file."""
@@ -17,6 +19,7 @@ def load_from_json_file(filename):
         with open(filename, mode='r', encoding='utf-8') as file:
             return json.load(file)
     return []
+
 
 if __name__ == "__main__":
     try:
