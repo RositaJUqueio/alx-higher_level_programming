@@ -7,7 +7,7 @@
 class Rectangle:
     """Defines a rectangle."""
 
-    number_of_instances = 0 
+    number_of_instances = 0
     print_symbol = '#'
 
     def __init__(self, width=0, height=0):
@@ -74,8 +74,8 @@ class Rectangle:
     def __del__(self):
         """Prints a farewell message when the instance is deleted."""
         print("Bye rectangle...")
-    
-    @staticmethod   
+
+    @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """returns the biggest rectangle based on the area"""
         if not isinstance(rect_1, Rectangle):
@@ -85,7 +85,7 @@ class Rectangle:
         if rect_1.area() >= rect_2.area():
             return rect_1
         return rect_2
-    
+
     @classmethod
     def square(cls, size=0):
         """returns new Rectangle with width & height equal tos ize"""
