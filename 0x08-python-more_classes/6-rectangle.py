@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 # Rosita J Uqueio
+
+"""class Rectangle that defines a rectangle"""
+
+
 class Rectangle:
     """Defines a rectangle."""
 
