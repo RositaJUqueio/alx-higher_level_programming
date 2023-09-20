@@ -3,8 +3,8 @@
 class Rectangle:
     """Defines a rectangle."""
 
-    number_of_instances = 0 
-    # keeps track of the number of Rectangle instances created 
+    number_of_instances = 0
+    # keeps track of the number of Rectangle instances created.
 
     def __init__(self, width=0, height=0):
         """Initialize a rectangle.
